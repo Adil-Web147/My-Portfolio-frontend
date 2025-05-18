@@ -1,0 +1,152 @@
+.more-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  min-height: 80vh;
+}
+
+.more-container.dark {
+  color: #f0f0f0;
+}
+
+.section-header {
+  margin-bottom: 60px;
+}
+
+.label {
+  display: inline-flex;
+  align-items: center;
+  background-color: #000;
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+
+.dark .label {
+  background-color: #2f7df4;
+}
+
+.label-icon {
+  margin-right: 8px;
+}
+
+.section-title {
+  font-family: "Rubik", sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: var(--text-color);
+}
+
+.line {
+  width: 100px;
+  height: 6px;
+  background-color: #2f7df4;
+  margin-bottom: 20px;
+}
+
+.more-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 40px;
+}
+
+.more-card {
+  background-color: var(--card-bg);
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  border: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.more-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  border-color: #2f7df4;
+}
+
+.more-card-title {
+  font-family: "Rubik", sans-serif;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: var(--text-color);
+}
+
+.more-card-description {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  color: var(--text-color);
+  flex-grow: 1;
+}
+
+.more-card-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 10px;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  align-self: flex-start;
+  width: 100%;
+  text-align: center;
+}
+
+.dark .more-card-link {
+  background-color: #2f7df4;
+}
+
+.more-card-link:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.link-icon {
+  margin-left: 10px;
+}
+
+/* Responsive styles */
+@media (max-width: 992px) {
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .more-cards {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .more-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .more-card-description {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .more-card {
+    padding: 20px;
+  }
+
+  .more-card-title {
+    font-size: 1.5rem;
+  }
+}

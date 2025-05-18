@@ -1,0 +1,244 @@
+/* Navbar Container */
+.header-container {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  padding: 15px 0;
+  display: flex;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+/* Main Navigation */
+.nav {
+  /* width: 28rem; */
+  border: 1px solid #333;
+  border-radius: 50px;
+  text-align: center;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav.dark {
+  border-color: #f0f0f0;
+  background-color: rgba(30, 30, 30, 0.8);
+}
+
+/* Navigation Links */
+.nav a {
+  padding: 0 15px;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+}
+
+.nav-icon-wrapper {
+  display: inline-block;
+  padding: 5px 10px;
+  transition: all 0.3s ease;
+}
+
+.nav a svg {
+  width: 24px;
+  height: 24px;
+  fill: #333;
+  transition: all 0.3s ease;
+}
+
+.nav.dark a svg {
+  fill: #f0f0f0;
+}
+
+.nav-icon-wrapper:hover {
+  background-color: rgba(151, 152, 154, 0.42);
+  border-radius: 5px;
+}
+
+.nav a:hover svg {
+  fill: rgba(0, 0, 255, 0.524);
+}
+
+/* Navigation Text (Tooltip) */
+.nav-text {
+  position: absolute;
+  top: 45px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.541);
+  box-shadow: 5px 3px 3px rgba(0, 0, 0, 0.466);
+  color: black;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 15px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 10;
+}
+
+.nav.dark .nav-text {
+  background-color: rgba(50, 50, 50, 0.8);
+  color: #f0f0f0;
+}
+
+.nav-text.visible,
+.nav a:hover .nav-text {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Active Navigation Item */
+.nav a.active .nav-icon-wrapper {
+  background-color: rgba(151, 152, 154, 0.22);
+  border-radius: 5px;
+}
+
+.nav a.active svg {
+  fill: rgba(0, 0, 255, 0.575);
+  border: 2px solid rgba(0, 0, 0, 0.31);
+  border-radius: 5px;
+  width: 24px;
+  height: 24px;
+}
+
+.nav.dark a.active svg {
+  border-color: rgba(255, 255, 255, 0.31);
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  margin-left: 10px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.theme-toggle svg {
+  width: 24px;
+  height: 24px;
+  fill: #333;
+}
+
+.dark .theme-toggle svg {
+  fill: #f0f0f0;
+}
+
+.theme-toggle:hover {
+  background-color: rgba(151, 152, 154, 0.42);
+}
+
+/* Mobile Menu Toggle */
+.mobile-menu-toggle {
+  display: flex;
+  width: 100%;
+  padding: 10px 20px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.mobile-menu-toggle.dark {
+  background-color: rgba(30, 30, 30, 0.9);
+}
+
+.menu-button,
+.theme-toggle-mobile {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.menu-button svg,
+.theme-toggle-mobile svg {
+  width: 24px;
+  height: 24px;
+  fill: #333;
+}
+
+.dark .menu-button svg,
+.dark .theme-toggle-mobile svg {
+  fill: #f0f0f0;
+}
+
+.mobile-title {
+  font-family: "Rubik", sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.dark .mobile-title {
+  color: #f0f0f0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .mobile-menu-toggle {
+    display: flex;
+  }
+
+  .nav {
+    position: fixed;
+    top: 60px;
+    left: -100%;
+    width: 80%;
+    max-width: 300px;
+    height: calc(100vh - 60px);
+    border-radius: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    transition: left 0.3s ease;
+    overflow-y: auto;
+  }
+
+  .nav.show {
+    left: 0;
+  }
+
+  .nav a {
+    width: 100%;
+    padding: 15px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-icon-wrapper {
+    margin-right: 15px;
+  }
+
+  .nav-text {
+    position: static;
+    transform: none;
+    background: none;
+    box-shadow: none;
+    opacity: 1;
+    visibility: visible;
+    padding: 0;
+    color: #333;
+  }
+
+  .dark .nav-text {
+    color: #f0f0f0;
+    background: none;
+  }
+
+  .nav a.active {
+    background-color: rgba(0, 0, 255, 0.1);
+    border-radius: 10px;
+  }
+}

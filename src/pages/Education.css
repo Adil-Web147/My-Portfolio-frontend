@@ -1,0 +1,157 @@
+.education-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  min-height: 80vh;
+}
+
+.section-header {
+  margin-bottom: 60px;
+}
+
+.label {
+  display: inline-flex;
+  align-items: center;
+  background-color: #000;
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+
+.dark .label {
+  background-color: #2f7df4;
+}
+
+.label-icon {
+  margin-right: 8px;
+}
+
+.section-title {
+  font-family: "Rubik", sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: var(--text-color);
+}
+
+.line {
+  width: 100px;
+  height: 6px;
+  background-color: #2f7df4;
+  margin-bottom: 20px;
+}
+
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.timeline-item {
+  display: flex;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.timeline-date {
+  width: 150px;
+  padding-right: 30px;
+  text-align: right;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 500;
+  font-style: italic;
+  color: var(--text-color);
+  padding-top: 5px;
+}
+
+.timeline-line {
+  position: relative;
+  width: 6px;
+  background-color: #000;
+  margin: 0 30px;
+}
+
+.dark .timeline-line {
+  background-color: #444;
+}
+
+.timeline-dot {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #2f7df4;
+  border-radius: 50%;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 0 10px rgba(47, 125, 244, 0.5);
+}
+
+.timeline-content {
+  flex: 1;
+  background-color: var(--card-bg);
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+}
+
+.timeline-content:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  border-color: #2f7df4;
+}
+
+.timeline-title {
+  font-family: "Rubik", sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: var(--text-color);
+  line-height: 1.4;
+}
+
+.timeline-description {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .timeline-item {
+    flex-direction: column;
+  }
+
+  .timeline-date {
+    width: 100%;
+    text-align: left;
+    padding-right: 0;
+    margin-bottom: 15px;
+  }
+
+  .timeline-line {
+    display: none;
+  }
+
+  .timeline-content {
+    width: 100%;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .timeline-title {
+    font-size: 1.3rem;
+  }
+}
