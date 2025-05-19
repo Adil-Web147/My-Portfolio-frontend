@@ -46,7 +46,7 @@ const Dashboard = () => {
     }
   }
 
-  // Update message status
+  // Update message statusa
   const updateMessageStatus = async (id, status) => {
     try {
       const response = await axios.put(`${API_URL}/contact/${id}`, { status })
