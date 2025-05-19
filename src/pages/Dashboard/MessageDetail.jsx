@@ -3,6 +3,11 @@
 import { useState } from "react"
 import { FaUser, FaEnvelope, FaClock, FaTrash, FaReply } from "react-icons/fa"
 
+
+
+const API_URL = process.env.REACT_APP_API_URL || "http://localhost:5000/api";
+
+
 const MessageDetail = ({ message, onReply, onDelete, onUpdateStatus }) => {
   const [replyText, setReplyText] = useState("")
   const [isReplying, setIsReplying] = useState(false)
@@ -30,7 +35,8 @@ const MessageDetail = ({ message, onReply, onDelete, onUpdateStatus }) => {
 
     try {
       // Send the reply to the backend
-      const response = await fetch(`http://localhost:5000/api/contact/${message._id}/reply`, {
+     
+const response = await fetch(`${API_URL}/contact/${message._id}/reply`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
