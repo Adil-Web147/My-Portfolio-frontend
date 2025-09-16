@@ -1,6 +1,6 @@
-"use client"
-import { FaUser, FaGlobe, FaUserCircle, FaHeart } from "react-icons/fa"
-import "./About.css"
+"use client";
+import { FaUser, FaGlobe, FaUserCircle, FaHeart } from "react-icons/fa";
+import "./About.css";
 
 const About = ({ theme }) => {
   return (
@@ -11,24 +11,26 @@ const About = ({ theme }) => {
           <span>About me</span>
         </div>
         <h1 className="section-title">
-          Front End Developer And Web
+           MERN Stack Developer 
           <br />
-          Developer, Based In ICP, Pakistan.
+          Based In ICP, Pakistan.
         </h1>
         <div className="line"></div>
       </div>
 
       <p className="about-description">
-        I am a Front End Developer working on web applications and mobile applications. I have been developing
-        professionally for 3 years but tinkering since a kid. I started in tech with internship, freelance services and
-        part time positions during college. I have a bit off a diverse job history. I have been working on IOT's, Mobile
-        App Development, System Engineer, graphic/web design, web app development and sysadmin/DevOps.
-        <br />
-        <br />I can help everywhere in the stack and I love wearing multiple hats to an extent. Although, I do think my
-        strongest skills are in software engineering. Most of my positions utilized agile-like development processes
-        using Jira. A day in my life may consist of: prepping web art, fixing some front-end bugs, adding an API
-        endpoint, dockerizing an application, database design, configuring a library, setting up a build or deployment
-        plan.
+        I’m a MERN Stack Developer who enjoys turning ideas into functional web
+        applications. My core skills are in MongoDB, Express.js, React.js, and
+        Node.js, and I focus on writing clean, efficient, and maintainable code.
+        I started my journey in tech during my studies, building projects and
+        experimenting with different tools. Over time, I’ve grown comfortable
+        working on both frontend and backend, from designing responsive
+        interfaces to creating APIs and managing databases. Beyond coding, I’m
+        interested in how products are built end-to-end — from user experience
+        to deployment. I enjoy problem-solving, learning new technologies, and
+        collaborating with others to bring projects to life. Right now, I’m
+        focused on strengthening my expertise and contributing to impactful
+        projects where I can continue to grow as a developer.
       </p>
 
       <div className="info-cards">
@@ -83,7 +85,7 @@ const About = ({ theme }) => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default About
+export default About;

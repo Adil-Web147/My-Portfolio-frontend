@@ -7,7 +7,7 @@ import Login from "./Login"
 import "./Dashboard.css"
 
 // API base URL - change this to your backend URL
-const API_URL = process.env.REACT_APP_API_URL || "http://localhost:5000/api";
+const API_URL = "http://localhost:5000/api"
 
 const Dashboard = ({ theme }) => {
   const [isAuthenticated, setIsAuthenticated] = useState(false)

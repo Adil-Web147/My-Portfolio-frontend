@@ -6,7 +6,7 @@ import axios from "axios"
 import "./Contact.css"
 
 // API base URL - change this to your backend URL
-const API_URL = process.env.REACT_APP_API_URL || "http://localhost:5000/api";
+const API_URL = "http://localhost:5000/api"
 
 const Contact = ({ theme }) => {
   const [formData, setFormData] = useState({

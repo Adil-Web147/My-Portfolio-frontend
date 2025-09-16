@@ -1,4 +1,3 @@
-"use client"
 
 import { useState, useEffect } from "react"
 import axios from "axios"
@@ -7,7 +6,7 @@ import MessageDetail from "./MessageDetail"
 import "./Dashboard.css"
 
 // API base URL - change this to your backend URL
-const API_URL = process.env.REACT_APP_API_URL || "http://localhost:5000/api";
+const API_URL = "http://localhost:5000/api"
 
 const Dashboard = () => {
   const [messages, setMessages] = useState([])
@@ -46,7 +45,7 @@ const Dashboard = () => {
     }
   }
 
-  // Update message statusa
+  // Update message status
   const updateMessageStatus = async (id, status) => {
     try {
       const response = await axios.put(`${API_URL}/contact/${id}`, { status })

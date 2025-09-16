@@ -72,22 +72,22 @@ const Home = ({ theme }) => {
           </div>
           <div className="line"></div>
           <div className="description">
-            I am Full Stack Developer & <span className="highlight">Creator</span>
+            I am a Full Stack Developer & <span className="highlight">Problem Solver</span>
           </div>
 
           <div className="social-links">
             <SocialIcon icon={<FaTwitter />} href="#" />
-            <SocialIcon icon={<FaLinkedin />} href="#" />
-            <SocialIcon icon={<FaEnvelope />} href="#" />
+            <SocialIcon icon={<FaLinkedin />} href="https://www.linkedin.com/in/muhammad-adil222/" />
+            <SocialIcon icon={<FaEnvelope />} href="mailto:muhammadadilhangu@gmail.com" />
             <SocialIcon icon={<FaSkype />} href="#" />
             <SocialIcon icon={<FaExternalLinkAlt />} href="#" />
           </div>
 
           <div className="buttons">
-            <button className="resume-btn">
-              <FaDownload className="btn-icon" />
-              Download Resume
-            </button>
+           <a href="/Muhammad_Adil_Resume1.pdf" target="_blank" rel="noopener noreferrer" className="resume-btn">
+    <FaDownload className="btn-icon" />
+    Download Resume
+  </a>
 
             <Link to="https://github.com/Adil-Web147" target="_blank" className="github-btn">
               <FaGithub className="btn-icon" />
