@@ -18,6 +18,9 @@ import nodejsImg from "../assets/nodejs.png"
 import expressImg from "../assets/express-js.png"
 import uxuiImg from "../assets/uxui.png"
 import nextjsImg from "../assets/nextjs.png"
+import odooImg from "../assets/odoo.png"
+import botImg from "../assets/bot.png"
+import erpImg from "../assets/erp.png"
 
 const Skills = ({ theme }) => {
   const skills = [
@@ -36,10 +39,9 @@ const Skills = ({ theme }) => {
     { name: "Express.js", image: expressImg },
     { name: "UX/UI Design", image: uxuiImg },
     { name: "Next.js", image: nextjsImg },
-    
-    
-
-
+    { name: "Odoo ERP", image: odooImg },
+    { name: "Bot Development", image: botImg },
+    { name: "ERP Solutions", image: erpImg },
   ]
 
   return (

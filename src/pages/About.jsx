@@ -11,26 +11,22 @@ const About = ({ theme }) => {
           <span>About me</span>
         </div>
         <h1 className="section-title">
-           MERN Stack Developer 
+          Full-Stack Developer | Odoo ERP Expert
           <br />
-          Based In ICP, Pakistan.
+          Based in KP IT Board Strings Technologies.
         </h1>
         <div className="line"></div>
       </div>
-
+      +
       <p className="about-description">
-        I’m a MERN Stack Developer who enjoys turning ideas into functional web
-        applications. My core skills are in MongoDB, Express.js, React.js, and
-        Node.js, and I focus on writing clean, efficient, and maintainable code.
-        I started my journey in tech during my studies, building projects and
-        experimenting with different tools. Over time, I’ve grown comfortable
-        working on both frontend and backend, from designing responsive
-        interfaces to creating APIs and managing databases. Beyond coding, I’m
-        interested in how products are built end-to-end — from user experience
-        to deployment. I enjoy problem-solving, learning new technologies, and
-        collaborating with others to bring projects to life. Right now, I’m
-        focused on strengthening my expertise and contributing to impactful
-        projects where I can continue to grow as a developer.
+        I’m a Full-Stack Developer and Odoo ERP Specialist dedicated to building efficient, scalable solutions. My
+        expertise spans the MERN Stack (MongoDB, Express, React, Node), Odoo customization, and Bot Development. I specialize in creating functional web
+        applications, automating business processes, and developing intelligent bots (Discord/Python/JS) to streamline workflows.
+        With a strong background in Web Scraping and Business Automation, I
+        focus on writing clean, maintainable code that solves real-world
+        problems. From designing responsive modern interfaces to creating robust
+        APIs and managing databases, I enjoy building products end-to-end and
+        collaborating to bring impactful projects to life.
       </p>
 
       <div className="info-cards">

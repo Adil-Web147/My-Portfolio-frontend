@@ -24,9 +24,9 @@ const Education = ({ theme }) => {
             <h2 className="timeline-title">
               Bachelor of Computer Science,
               <br />
-              Islamia University Peshawer
+              Islamia College University Peshawer.
             </h2>
-            <p className="timeline-description">Continue my Bachelor degree in Computer Science.</p>
+            <p className="timeline-description">Completed my Bachelor degree in Computer Science.</p>
           </div>
         </div>
 
