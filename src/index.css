@@ -1,11 +1,14 @@
 body {
   margin: 0;
- font-family: "Outfit", sans-serif;
+  font-family: "Outfit", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+  background-image: radial-gradient(rgba(47, 125, 244, 0.2) 1.5px, transparent 0);
+  background-size: 30px 30px;
+  background-attachment: fixed;
 }
 
 code {

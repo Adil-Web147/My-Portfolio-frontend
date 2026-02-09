@@ -28,7 +28,7 @@
 }
 
 body {
-   font-family: "Outfit", sans-serif;
+  font-family: "Outfit", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
   background-color: var(--background);
@@ -38,13 +38,13 @@ body {
 
 .app {
   min-height: 100vh;
-  background-image: radial-gradient(#1b89c4 1px, transparent 1px);
-  background-size: 20px 20px;
+  background-image: radial-gradient(#0c3b81 1px, transparent 1px);
+  background-size: 18px 18px;
   transition: all 0.3s ease;
 }
 
 .app.dark {
-  background-image: radial-gradient(rgba(27, 137, 196, 0.3) 1px, transparent 1px);
+  background-image: radial-gradient(#0c3b81 1px, transparent 1px);
 }
 
 /* Utility classes */
@@ -60,6 +60,7 @@ body {
     opacity: 0;
     transform: translateY(20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -70,9 +71,11 @@ body {
   0% {
     transform: scale(1);
   }
+
   50% {
     transform: scale(1.05);
   }
+
   100% {
     transform: scale(1);
   }
