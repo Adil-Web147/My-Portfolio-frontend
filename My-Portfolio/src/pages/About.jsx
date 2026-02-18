@@ -1,6 +1,6 @@
-"use client"
-import { FaUser, FaGlobe, FaUserCircle, FaHeart } from "react-icons/fa"
-import "./About.css"
+"use client";
+import { FaUser, FaGlobe, FaUserCircle, FaHeart } from "react-icons/fa";
+import "./About.css";
 
 const About = ({ theme }) => {
   return (
@@ -11,24 +11,22 @@ const About = ({ theme }) => {
           <span>About me</span>
         </div>
         <h1 className="section-title">
-          Front End Developer And Web
+          Full-Stack Developer | Odoo ERP Expert
           <br />
-          Developer, Based In ICP, Pakistan.
+          Based in KP IT Board Strings Technologies.
         </h1>
         <div className="line"></div>
       </div>
-
+      +
       <p className="about-description">
-        I am a Front End Developer working on web applications and mobile applications. I have been developing
-        professionally for 3 years but tinkering since a kid. I started in tech with internship, freelance services and
-        part time positions during college. I have a bit off a diverse job history. I have been working on IOT's, Mobile
-        App Development, System Engineer, graphic/web design, web app development and sysadmin/DevOps.
-        <br />
-        <br />I can help everywhere in the stack and I love wearing multiple hats to an extent. Although, I do think my
-        strongest skills are in software engineering. Most of my positions utilized agile-like development processes
-        using Jira. A day in my life may consist of: prepping web art, fixing some front-end bugs, adding an API
-        endpoint, dockerizing an application, database design, configuring a library, setting up a build or deployment
-        plan.
+        I’m a Full-Stack Developer and Odoo ERP Specialist dedicated to building efficient, scalable solutions. My
+        expertise spans the MERN Stack (MongoDB, Express, React, Node), Odoo customization, and Bot Development. I specialize in creating functional web
+        applications, automating business processes, and developing intelligent bots (Discord/Python/JS) to streamline workflows.
+        With a strong background in Web Scraping and Business Automation, I
+        focus on writing clean, maintainable code that solves real-world
+        problems. From designing responsive modern interfaces to creating robust
+        APIs and managing databases, I enjoy building products end-to-end and
+        collaborating to bring impactful projects to life.
       </p>
 
       <div className="info-cards">
@@ -83,7 +81,7 @@ const About = ({ theme }) => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default About
+export default About;

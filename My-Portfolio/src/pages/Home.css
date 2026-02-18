@@ -31,17 +31,25 @@
 
 .title {
   font-family: "Rubik", sans-serif;
-  font-size: 4rem;
+  font-size: 6rem;
   margin-bottom: 20px;
-  line-height: 1.2;
+  line-height: 1.1;
+  color: #0F172A;
+
+}
+
+@media (max-width: 640px) {
+  .title {
+    font-size: 3.75rem;
+    /* max-sm:text-6xl */
+  }
 }
 
 .first-name,
 .last-name {
   display: block;
-  color: var(--text-color);
-   min-height: 4rem;
-    visibility: visible;
+  min-height: 6rem;
+  visibility: visible;
 }
 
 .first-name:empty::before,
@@ -51,10 +59,11 @@
 }
 
 .line {
-  width: 100px;
-  height: 8px;
+  width: 120px;
+  height: 6px;
   background-color: #2f7df4;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  border-radius: 4px;
 }
 
 .description {
@@ -118,6 +127,7 @@
   background-color: #000;
   color: #fff;
   border: none;
+  text-decoration: none;
 }
 
 .dark .resume-btn {
@@ -156,6 +166,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: -60px;
 }
 
 .profile-image {
@@ -246,7 +257,7 @@
 
 
 .name-container {
-  height: 10rem; 
+  height: 14rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -261,10 +272,18 @@
 }
 
 @keyframes blink {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0; }
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
 }
 
 .title {
-  min-height: 4.8rem; /* Adjust based on your font size to prevent layout shift */
+  min-height: 4.8rem;
+  /* Adjust based on your font size to prevent layout shift */
 }
