@@ -1,0 +1,119 @@
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Rubik:wght@300;400;500;600;700;800;900&family=Rubik+Mono+One&display=swap");
+
+/* CSS Variables for theming */
+:root {
+  --background: #ffffff;
+  --text-color: #333333;
+  --text-secondary: #666666;
+  --card-bg: #ffffff;
+  --border-color: #e5e7eb;
+  --input-bg: #f9fafb;
+}
+
+.dark {
+  --background: #121212;
+  --text-color: #f0f0f0;
+  --text-secondary: #a0a0a0;
+  --card-bg: #1e1e1e;
+  --border-color: #333333;
+  --input-bg: #2a2a2a;
+}
+
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  background-color: var(--background);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.app {
+  min-height: 100vh;
+  background-image: radial-gradient(#0c3b81 1px, transparent 1px);
+  background-size: 18px 18px;
+  transition: all 0.3s ease;
+}
+
+.app.dark {
+  background-image: radial-gradient(#0c3b81 1px, transparent 1px);
+}
+
+/* Utility classes */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.05);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Apply animations to elements */
+.section-header,
+.content-wrapper,
+.skills-grid,
+.info-cards,
+.timeline,
+.projects-grid,
+.more-cards,
+.contact-form-container {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .container {
+    padding: 0 40px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 15px;
+  }
+}

@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  background-image: radial-gradient(rgba(47, 125, 244, 0.2) 1.5px, transparent 0);
+  background-size: 30px 30px;
+  background-attachment: fixed;
+}
+
+code {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: weight;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Remove default focus outlines and add custom ones */
+:focus {
+  outline: none;
+}
+
+:focus-visible {
+  outline: 2px solid #2f7df4;
+  outline-offset: 2px;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Dark mode scrollbar */
+.dark ::-webkit-scrollbar-track {
+  background: #2a2a2a;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #555;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #777;
+}
+
+/* Dark mode text visibility fixes */
+.dark h1,
+.dark h2,
+.dark h3,
+.dark p,
+.dark label,
+.dark .section-title,
+.dark .subtitle,
+.dark .description {
+  color: #f0f0f0;
+}
+
+.dark input,
+.dark textarea {
+  background-color: #2a2a2a;
+  color: #f0f0f0;
+  border-color: #444;
+}
+
+.dark .card,
+.dark .info-card,
+.dark .project-card,
+.dark .more-card,
+.dark .timeline-content,
+.dark .contact-form-container,
+.dark .skill-box {
+  background-color: #1e1e1e;
+  border-color: #333;
+}

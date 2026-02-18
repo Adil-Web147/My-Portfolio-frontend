@@ -1,0 +1,136 @@
+.skills-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.section-header {
+  margin-bottom: 40px;
+}
+
+.label {
+  display: inline-flex;
+  align-items: center;
+  background-color: #000;
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+
+.dark .label {
+  background-color: #2f7df4;
+}
+
+.label-icon {
+  margin-right: 8px;
+}
+
+.section-title {
+  font-family: "Rubik", sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: var(--text-color);
+}
+
+.line {
+  width: 100px;
+  height: 6px;
+  background-color: #2f7df4;
+  margin-bottom: 20px;
+}
+
+.section-description {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin-bottom: 40px;
+  color: var(--text-color);
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 30px;
+}
+
+.skill-box {
+  background-color: var(--card-bg);
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); */
+  transition: all 0.3s ease;
+  border: 2px solid rgb(107 114 128);
+}
+
+.skill-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  border-color: #2f7df4;
+}
+
+.skill-image-container {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.skill-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.skill-name {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  color: var(--text-color);
+}
+
+/* Responsive styles */
+@media (max-width: 992px) {
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .section-description {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .skills-grid {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 15px;
+  }
+
+  .skill-box {
+    padding: 15px;
+  }
+
+  .skill-image-container {
+    width: 60px;
+    height: 60px;
+  }
+}
